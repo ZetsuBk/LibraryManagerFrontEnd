@@ -1,1 +1,24 @@
-<p>book-table works!</p>
+<h1>Books</h1>
+    
+    <div class="table-responsive">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Genre</th>
+            <th>Publish yaer</th>
+            <th>ISBN</th>
+          </tr>
+        </thead>
+        <tbody>
+          @for (book of listBooks; track $index) {
+            <tr>
+                <td>{{book.title}}</td>
+                <td>{{book.genre}}</td>
+                <td>{{book.publishYear}}</td>
+                <td>{{book.isbn}}</td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    </div>

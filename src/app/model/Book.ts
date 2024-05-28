@@ -3,5 +3,5 @@ export interface Book {
     title: string;
     genre: string;
     publishYear: Date;
-    ISBN: string;
+    isbn: string;
   }

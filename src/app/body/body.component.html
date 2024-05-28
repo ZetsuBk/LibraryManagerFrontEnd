@@ -1,0 +1,11 @@
+<main role="main" class="container">
+    @if(listAuthors[0] ==section) {
+        <app-author-table ></app-author-table>
+    }@else if(listAuthors[1]==section ) {
+        <app-book-table></app-book-table>
+    }@else if (listAuthors[2] == section) {
+        <app-upload></app-upload>
+    }@else {
+        <app-home></app-home>
+    }
+</main>

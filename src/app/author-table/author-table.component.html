@@ -1,0 +1,24 @@
+<h1>Authors</h1>
+    
+    <div class="table-responsive">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>First name</th>
+            <th>Last name</th>
+            <th>Date of birth</th>
+            <th>Nationality</th>
+          </tr>
+        </thead>
+        <tbody>
+          @for (author of listAuthors; track $index) {
+            <tr>
+                <td>{{author.firstname}}</td>
+                <td>{{author.lastname}}</td>
+                <td>{{author.dateOfBirth}}</td>
+                <td>{{author.nationality}}</td>
+            </tr>
+          }
+        </tbody>
+      </table>
+    </div>
